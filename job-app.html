@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+<body>
+
+  <form id='id_form'>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required>
+    <div id="nome_val"></div><br>
+    <label for="telefone">Telefone:</label><br>
+    <input type="text" id="telefone" name="telefone">
+    <div id="tel_val"></div><br>
+    <label for="source">Como nos conheceu:</label><br>
+    <select id="client_source" name='source'>
+      <option value="Tv">Tv</option>
+      <option value="Internet">Internet</option>
+      <option value="Outros">Outros</option>
+    </select><br><br>
+    <label for="social">Possui rede social:</label><br>
+    <input type="radio" id="sim" name="social" value=True class="social_switch">Sim<br>
+    <input type="radio" id="nao" name="social" value=False>Não<br><br>
+    <label for="social_check">Quais:</label><br>
+    <input type="checkbox" id="social_check1" name="social_check" value="Facebook">Facebook<br>
+    <input type="checkbox" id="social_check2" name="social_check" value="LinkedIn">LinkedIn<br>
+    <input type="checkbox" id="social_check3" name="social_check" value="Instagram">Instagram<br><br>
+    <input type="button" onclick="validation();" value='Enviar' id='submit_btn'><br/>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type = 'text/javascript' language='javascript' src='script.js'></script>
+</body>
+</html>
+
+
